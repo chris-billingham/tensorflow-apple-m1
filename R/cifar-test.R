@@ -47,9 +47,9 @@ history <- model %>%
     x = cifar$train$x, y = cifar$train$y,
     epochs = 10,
     validation_data = unname(cifar$test),
-    verbose = 2
+    verbose = 1
   )
 
 plot(history)
 
-evaluate(model, cifar$test$x, cifar$test$y, verbose = 0)
+evaluate(model, cifar$test$x, cifar$test$y, verbose = 1)
