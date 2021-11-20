@@ -3,6 +3,9 @@
 library(tensorflow)
 library(keras)
 
+# set reticulate to use the correct python installation
+reticulate::use_python("~/miniforge3/bin/python3")
+
 #
 cifar <- dataset_cifar10()
 
